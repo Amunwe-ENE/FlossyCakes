@@ -1,0 +1,5 @@
+/* Our custom styles */
+
+a > span#header-brand {
+      color: orange;
+    }
