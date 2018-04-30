@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Test</title>
+    <link rel="text/css" href="css/bootstrap.css">
+    <style  >
+    @media (max-width: 300px) {
+  .carosel-item {
+    width: 100%;
+  }
+}
+@media (min-width: 300px) {
+  .carosel-item {
+    width: 50%;
+  }
+}
+@media (min-width: 500px) {
+  .carosel-item {
+    width: 33.333%;
+  }
+}
+@media (min-width: 768px) {
+  .carosel-item {
+    width: 25%;
+  }
+}
+.carosel {
+  position: relative;
+  background-color: #000;
+}
+.carosel-inner {
+  white-space: nowrap;
+  overflow: hidden;
+  font-size: 0;
+}
+.carosel-item {
+  display: inline-block;
+}
+.carosel-control {
+  position: absolute;
+  top: 50%;
+  padding: 15px;
+  box-shadow: 0 0 10px 0px rgba(0, 0, 0, 0.5);
+  transform: translateY(-50%);
+  border-radius: 50%;
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 30px;
+  display: inline-block;
+}
+.carosel-control-left {
+  left: 15px;
+}
+.carosel-control-right {
+  right: 15px;
+}
+.carosel-control:active,
+.carosel-control:hover {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.8);
+}
+    </style>
+  </head>
+  <body>
+  <div class="carosel" id="carosel1">
+  <a class="carosel-control carosel-control-left glyphicon glyphicon-chevron-left" href="#"></a>
+  <div class="carosel-inner">
+    <div class="col-lg-4 col-md-6 mb-3 carosel-item">
+      <!--Card-->
+      <div class="card card-cascade  card-ecommerce narrower">
+        <!--Card image-->
+        <div class="view overlay">
+          <img src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Products/img%20(49).jpg" class="card-img-top" alt="sample photo">
+          <a>
+            <div class="mask rgba-white-slight"></div>
+          </a>
+        </div>
+        <!--Card image-->
+        <!--Card content-->
+        <div class="card-body text-center no-padding">
+          <!--Category & Title-->
+          <a href="" class="text-muted">
+            <h5>Photography</h5>
+          </a>
+          <h4 class="card-title">
+                              <strong>
+                                  <a href="">Camera</a>
+                              </strong>
+                          </h4>
+          <!--Description-->
+          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing minima veniam elit.</p>
+          <!--Card footer-->
+          <div class="card-footer">
+            <span class="float-left font-weight-bold">
+                                  <strong>1160$</strong>
+                              </span>
+            <span class="float-right">
+                                  <a class="" data-toggle="tooltip" data-placement="top" title="Quick Look">
+                                      <i class="fa fa-eye grey-text ml-3"></i>
+                                  </a>
+                                  <a class="" data-toggle="tooltip" data-placement="top" title="Add to Wishlist">
+                                      <i class="fa fa-heart grey-text ml-3"></i>
+                                  </a>
+                              </span>
+          </div>
+        </div>
+        <!--Card content-->
+      </div>
+      <!--Card-->
+      <div class="col-lg-4 col-md-6 mb-3 carosel-item">
+        <!--Card-->
+        <div class="card card-cascade  card-ecommerce ">
+          <!--Card image-->
+          <div class="view overlay">
+            <img src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Products/img%20(49).jpg" class="card-img-top" alt="sample photo">
+            <a>
+              <div class="mask rgba-white-slight"></div>
+            </a>
+          </div>
+          <!--Card image-->
+          <!--Card content-->
+          <div class="card-body text-center no-padding">
+            <!--Category & Title-->
+            <a href="" class="text-muted">
+              <h5>Photography</h5>
+            </a>
+            <h4 class="card-title">
+                                <strong>
+                                    <a href="">Camera</a>
+                                </strong>
+                            </h4>
+            <!--Description-->
+            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing minima veniam elit.</p>
+            <!--Card footer-->
+            <div class="card-footer">
+              <span class="float-left font-weight-bold">
+                                    <strong>1160$</strong>
+                                </span>
+              <span class="float-right">
+                                    <a class="" data-toggle="tooltip" data-placement="top" title="Quick Look">
+                                        <i class="fa fa-eye grey-text ml-3"></i>
+                                    </a>
+                                    <a class="" data-toggle="tooltip" data-placement="top" title="Add to Wishlist">
+                                        <i class="fa fa-heart grey-text ml-3"></i>
+                                    </a>
+                                </span>
+            </div>
+          </div>
+          <!--Card content-->
+        </div>
+        <!--Card-->
+    <img class="carosel-item" src="http://placehold.it/500/eeeeee&amp;text=3" />
+    <img class="carosel-item" src="http://placehold.it/500/f4f4f4&amp;text=4" />
+    <img class="carosel-item" src="http://placehold.it/500/fcfcfc/333&amp;text=5" />
+    <img class="carosel-item" src="http://placehold.it/500/f477f4/fff&amp;text=6" />
+  </div>
+  <a class="carosel-control carosel-control-right glyphicon glyphicon-chevron-right" href="#"></a>
+</div>
+<!-- <div class="carosel" id="carosel2">
+  <a class="carosel-control carosel-control-left glyphicon glyphicon-chevron-left" href="#"></a>
+  <div class="carosel-inner">
+    <img class="carosel-item" src="http://placehold.it/500/bbbbbb/fff&amp;text=1" />
+    <img class="carosel-item" src="http://placehold.it/500/CCCCCC&amp;text=2" />
+    <img class="carosel-item" src="http://placehold.it/500/eeeeee&amp;text=3" />
+    <img class="carosel-item" src="http://placehold.it/500/f4f4f4&amp;text=4" />
+    <img class="carosel-item" src="http://placehold.it/500/fcfcfc/333&amp;text=5" />
+    <img class="carosel-item" src="http://placehold.it/500/f477f4/fff&amp;text=6" />
+  </div>
+  <a class="carosel-control carosel-control-right glyphicon glyphicon-chevron-right" href="#"></a>
+
+</div> -->
+
+
+
+<div id="recommended-item-carousel" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner">
+        <div class="item active">
+
+            <div class="col-sm-3">
+                <div class="product-image-wrapper">
+                    <div class="single-products">
+                        <div class="productinfo text-center">
+                            <img src="img/home/recommend1.jpg" alt="" />
+                            <h2>$56</h2>
+                            <p>
+                                Easy Polo Black Edition
+                            </p>
+                            <a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="product-image-wrapper">
+                    <div class="single-products">
+                        <div class="productinfo text-center">
+                            <img src="img/home/recommend2.jpg" alt="" />
+                            <h2>$56</h2>
+                            <p>
+                                Easy Polo Black Edition
+                            </p>
+                            <a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="product-image-wrapper">
+                    <div class="single-products">
+                        <div class="productinfo text-center">
+                            <img src="img/home/recommend3.jpg" alt="" />
+                            <h2>$56</h2>
+                            <p>
+                                Easy Polo Black Edition
+                            </p>
+                            <a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="col-sm-3">
+                <div class="product-image-wrapper">
+                    <div class="single-products">
+                        <div class="productinfo text-center">
+                            <img src="img/home/recommend1.jpg" alt="" />
+                            <h2>$56</h2>
+                            <p>
+                                Easy Polo Black Edition
+                            </p>
+                            <a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="product-image-wrapper">
+                    <div class="single-products">
+                        <div class="productinfo text-center">
+                            <img src="img/home/recommend2.jpg" alt="" />
+                            <h2>$56</h2>
+                            <p>
+                                Easy Polo Black Edition
+                            </p>
+                            <a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="product-image-wrapper">
+                    <div class="single-products">
+                        <div class="productinfo text-center">
+                            <img src="img/home/recommend3.jpg" alt="" />
+                            <h2>$56</h2>
+                            <p>
+                                Easy Polo Black Edition
+                            </p>
+                            <a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a class="left recommended-item-control" href="#recommended-item-carousel" data-slide="prev"> <i class="fa fa-angle-left"></i> </a>
+    <a class="right recommended-item-control" href="#recommended-item-carousel" data-slide="next"> <i class="fa fa-angle-right"></i> </a>
+</div>
+
+
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+    <script type="text/javascript" src="js/popper.min.js">
+
+    </script>
+    <script type="text/javascript" src="js/jquery-3.2.1.min.js">
+    </script>
+    <script>
+    $(document).ready(function(){
+    $('.carosel-control-right').click(function() {
+  $(this).blur();
+  $(this).parent().find('.carosel-item').first().insertAfter($(this).parent().find('.carosel-item').last());
+});
+$('.carosel-control-left').click(function() {
+  $(this).blur();
+  $(this).parent().find('.carosel-item').last().insertBefore($(this).parent().find('.carosel-item').first());
+});
+});
+
+    </script>
+  </body>
+</html>

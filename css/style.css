@@ -3,3 +3,175 @@
 a > span#header-brand {
       color: orange;
     }
+    /* Navigation*/
+    .navbar {
+      background-color: transparent;
+    }
+    .scrolling-navbar {
+      transition: background .5s ease-in-out, padding .5s ease-in-out;
+    }
+    .top-nav-collapse {
+      background-color: #667490;
+    }
+    footer.page-footer {
+      background-color: #667490;
+    }
+    @media only screen and (max-width: 768px) {
+      .navbar {
+        background-color: #667490;
+      }
+    }
+
+    /* Necessary for full page carousel*/
+    html,
+    body,
+    .view {
+      height: 100%;
+    }
+
+    /* Carousel*/
+    .carousel,
+    .carousel-item,
+    .carousel-item.active {
+      height: 100%;
+    }
+    .carousel-inner {
+      height: 100%;
+    }
+    .carousel-item:nth-child(1) {
+      background-image: url("https://mdbootstrap.com/img/Photos/Others/images/76.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center center;
+    }
+    .carousel-item:nth-child(2) {
+      background-image: url("https://mdbootstrap.com/img/Photos/Horizontal/Nature/full page/30.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center center;
+    }
+    .carousel-item:nth-child(3) {
+      background-image: url("https://mdbootstrap.com/img/Photos/Horizontal/Nature/full page/img%20(10).jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center center;
+    }
+    .opa{
+      opacity: 0.9;
+    }
+    .multi-item-carousel{
+  .carousel-inner{
+    > .item{
+      transition: 500ms ease-in-out left;
+    }
+    .active{
+      &.left{
+        left:-33%;
+      }
+      &.right{
+        left:33%;
+      }
+    }
+    .next{
+      left: 33%;
+    }
+    .prev{
+      left: -33%;
+    }
+    @media all and (transform-3d), (-webkit-transform-3d) {
+      > .item{
+        // use your favourite prefixer here
+        transition: 500ms ease-in-out left;
+        transition: 500ms ease-in-out all;
+        backface-visibility: visible;
+        transform: none!important;
+      }
+    }
+  }
+  .carouse-control{
+    &.left, &.right{
+      background-image: none;
+    }
+  }
+}
+
+// non-related styling:
+body{
+  background: #333;
+  color: #ddd;
+}
+h1{
+  color: white;
+  font-size: 2.25em;
+  text-align: center;
+  margin-top: 1em;
+  margin-bottom: 2em;
+  text-shadow: 0px 2px 0px rgba(0, 0, 0, 1);
+}
+#texts {
+  z-index: 100;
+  position: absolute;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  left: 150px;
+  top: 350px;
+}
+.stripe {
+  z-index: 100;
+  position: absolute;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  /* .left: 15px; */
+  top: 110px;
+  width: 100%;
+}
+.dark{
+  background-color: black;
+  opacity: 0.5;
+
+}
+.fright{
+  display: inline-block !important;
+}
+.hidden{
+  display: none;
+}
+.minw{
+  min-width: 260px !important;
+}
+.pad10{
+padding: 16px;
+}
+.navback{
+  min-height: 100px;
+  max-height: 100px;
+  width: 100%;
+  background-color: lightblue;
+}
+.carousel-multi-item .col-md-4 {
+float: left;
+width: 33.3%;
+max-width: 100%;
+min-width: 33.3% !important;
+}
+a:hover > .red-hover{
+color: red !important;
+}
+.dropdown-submenu {
+    position: relative;
+}
+
+.dropdown-submenu .dropdown-menu {
+    top: 0;
+    left: 100%;
+    margin-top: -1px;
+}
+.max-card-height{
+  max-height: 186px !important;
+    min-height: 186px !important;
+}
+.btn-rounded{
+  border-radius: 40px;
+}
